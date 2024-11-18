@@ -1,0 +1,95 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://gammaohio-perfumepuma:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | WARNING] Notebook jupyter_template.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 58e3164f-f1eb-459f-97c1-02d2b13d80e7
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 58e3164f-f1eb-459f-97c1-02d2b13d80e7) to 5.3 (client).
+[NotebookApp | INFO] Saving file at /jupyter_template.ipynb
+[NotebookApp | WARNING] WebSocket ping timeout after 119941 ms.
+[NotebookApp | INFO] Starting buffering for 58e3164f-f1eb-459f-97c1-02d2b13d80e7:e6118d4e40244b298dacfd3df46f68f8
+[NotebookApp | CRITICAL] received signal 15, stopping
+[NotebookApp | INFO] Shutting down 1 kernel
+[NotebookApp | INFO] Kernel shutdown: 58e3164f-f1eb-459f-97c1-02d2b13d80e7
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://gammaohio-perfumepuma:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] Kernel started: 9ed0a126-a315-42c2-a3a0-261cb592d059
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 9ed0a126-a315-42c2-a3a0-261cb592d059) to 5.3 (client).
+[NotebookApp | WARNING] WebSocket ping timeout after 119928 ms.
+[NotebookApp | INFO] Starting buffering for 9ed0a126-a315-42c2-a3a0-261cb592d059:8955ab025e1d4b05863b88c7167ac993
+[NotebookApp | CRITICAL] received signal 15, stopping
+[NotebookApp | INFO] Shutting down 1 kernel
+[NotebookApp | INFO] Kernel shutdown: 9ed0a126-a315-42c2-a3a0-261cb592d059
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://gammaohio-perfumepuma:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] Kernel started: 979d9ce8-a30c-4dd6-8d3a-a9304aec8894
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 979d9ce8-a30c-4dd6-8d3a-a9304aec8894) to 5.3 (client).
+[NotebookApp | INFO] Starting buffering for 979d9ce8-a30c-4dd6-8d3a-a9304aec8894:71a1189b4ce14d548e4352608ce8dd2a
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 979d9ce8-a30c-4dd6-8d3a-a9304aec8894) to 5.3 (client).
+[NotebookApp | INFO] Starting buffering for 979d9ce8-a30c-4dd6-8d3a-a9304aec8894:aaa43c155a584f3ea7431df23a900fc2
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 979d9ce8-a30c-4dd6-8d3a-a9304aec8894) to 5.3 (client).
+[NotebookApp | INFO] Starting buffering for 979d9ce8-a30c-4dd6-8d3a-a9304aec8894:7ee91f7cfef24443b4358dc51f14533f
+[NotebookApp | CRITICAL] received signal 15, stopping
+[NotebookApp | INFO] Shutting down 1 kernel
+[NotebookApp | INFO] Kernel shutdown: 979d9ce8-a30c-4dd6-8d3a-a9304aec8894
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://gammaohio-perfumepuma:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] Kernel started: 00b13374-f8e3-4c79-929f-85440b5f76c6
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 00b13374-f8e3-4c79-929f-85440b5f76c6) to 5.3 (client).
+[NotebookApp | INFO] Starting buffering for 00b13374-f8e3-4c79-929f-85440b5f76c6:a42e2c1a54304b6d89864045b5851bde
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 00b13374-f8e3-4c79-929f-85440b5f76c6) to 5.3 (client).
+[NotebookApp | INFO] Saving file at /jupyter_template.ipynb
+[NotebookApp | INFO] Saving file at /jupyter_template.ipynb
+[NotebookApp | INFO] Saving file at /jupyter_template.ipynb
+[NotebookApp | INFO] Saving file at /jupyter_template.ipynb
+[NotebookApp | INFO] Saving file at /jupyter_template.ipynb
+[NotebookApp | INFO] Saving file at /jupyter_template.ipynb
+[NotebookApp | INFO] Saving file at /jupyter_template.ipynb
+[NotebookApp | INFO] Saving file at /jupyter_template.ipynb
+[NotebookApp | INFO] Saving file at /jupyter_template.ipynb
+[NotebookApp | INFO] Saving file at /jupyter_template.ipynb
+[NotebookApp | INFO] Saving file at /jupyter_template.ipynb
+[NotebookApp | INFO] Saving file at /jupyter_template.ipynb
+[NotebookApp | INFO] Saving file at /jupyter_template.ipynb
+[NotebookApp | INFO] Saving file at /jupyter_template.ipynb
+[NotebookApp | INFO] Saving file at /jupyter_template.ipynb
+[NotebookApp | INFO] Saving file at /jupyter_template.ipynb
+[NotebookApp | INFO] Saving file at /jupyter_template.ipynb
+[NotebookApp | INFO] Starting buffering for 00b13374-f8e3-4c79-929f-85440b5f76c6:a53e291f5b264aa38d8f3e5a82154609
+[NotebookApp | WARNING] Notebook jupyter_template.ipynb is not trusted
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 00b13374-f8e3-4c79-929f-85440b5f76c6) to 5.3 (client).
+[NotebookApp | INFO] Starting buffering for 00b13374-f8e3-4c79-929f-85440b5f76c6:26f36209cf114d779a3561a85ab86eea
+[NotebookApp | WARNING] Notebook jupyter_template.ipynb is not trusted
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 00b13374-f8e3-4c79-929f-85440b5f76c6) to 5.3 (client).
+[NotebookApp | INFO] Starting buffering for 00b13374-f8e3-4c79-929f-85440b5f76c6:a897920d1cbe4e2287d140be1a73e18e
+[NotebookApp | WARNING] Notebook jupyter_template.ipynb is not trusted
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 00b13374-f8e3-4c79-929f-85440b5f76c6) to 5.3 (client).
+[NotebookApp | INFO] Starting buffering for 00b13374-f8e3-4c79-929f-85440b5f76c6:aea956877c784b828c7b3c95133bbdcb
+[NotebookApp | WARNING] Notebook jupyter_template.ipynb is not trusted
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 00b13374-f8e3-4c79-929f-85440b5f76c6) to 5.3 (client).
+[NotebookApp | INFO] Saving file at /jupyter_template.ipynb
+[NotebookApp | WARNING] No nbgrader_config.py file found. Rerun with DEBUG log level to see where nbgrader is looking.
+[NotebookApp | INFO] Validating '/home/codio/workspace/jupyter_template.ipynb'
+[NotebookApp | INFO] Executing notebook with kernel: python3
+[NotebookApp | INFO] Saving file at /jupyter_template.ipynb
+[NotebookApp | WARNING] No nbgrader_config.py file found. Rerun with DEBUG log level to see where nbgrader is looking.
+[NotebookApp | INFO] Validating '/home/codio/workspace/jupyter_template.ipynb'
+[NotebookApp | INFO] Executing notebook with kernel: python3
+[NotebookApp | INFO] Saving file at /jupyter_template.ipynb
+[NotebookApp | INFO] Starting buffering for 00b13374-f8e3-4c79-929f-85440b5f76c6:372475da048f4d659e167edb275ec4d5
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 00b13374-f8e3-4c79-929f-85440b5f76c6) to 5.3 (client).
+[NotebookApp | INFO] Starting buffering for 00b13374-f8e3-4c79-929f-85440b5f76c6:c83997ceed7246e7a547f49da1b3c5df

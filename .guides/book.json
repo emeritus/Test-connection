@@ -1,0 +1,38 @@
+{
+ "name": "TEST-CT1-Development",
+ "children": [
+  {
+   "title": "Main",
+   "id": "5fc274ea-e3b5-4e1d-910f-b47baf914b90",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Assignment 2",
+     "id": "d1a6e45b-66dd-4e26-3ae1-57568865e246",
+     "type": "section",
+     "children": [
+      {
+       "title": "Assignment 2",
+       "id": "6ca0c56a-9a3a-3774-2b39-9624652ff759",
+       "type": "page",
+       "pageId": "6ca0c56a-9a3a-3774-2b39-9624652ff759"
+      }
+     ]
+    },
+    {
+     "title": "Assignment 1",
+     "id": "e4e877b8-4c39-a82a-a97f-18503a28f271",
+     "type": "section",
+     "children": [
+      {
+       "title": "Assignment 1",
+       "id": "67198271-688f-d84e-294f-d96c1d783689",
+       "type": "page",
+       "pageId": "67198271-688f-d84e-294f-d96c1d783689"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

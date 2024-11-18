@@ -1,0 +1,11 @@
+- assignmentName: "First Assignment"
+  section: ["Main", "Assignment 1"]
+  paths:
+    - source: assignments/module01/first_assignment/starter/
+      destination: ''
+
+- assignmentName: "Second Assignment"
+  section: ["Main", "Assignment 2"]
+  paths:
+    - source: assignments/module01/second_assignment/starter/
+      destination: ''

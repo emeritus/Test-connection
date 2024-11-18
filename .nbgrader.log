@@ -1,0 +1,14 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://gordongrand-decideceltic:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | WARNING] Notebook assignments/module01/first_assignment/starter/jupyter_template.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: edb437c2-6c95-4bc3-8983-eac0459a7c7d
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel edb437c2-6c95-4bc3-8983-eac0459a7c7d) to 5.3 (client).
+[NotebookApp | WARNING] Notebook assignments/module01/second_assignment/starter/jupyter_template.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 192e8430-a9e4-4506-9591-0b1b5c767944
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 192e8430-a9e4-4506-9591-0b1b5c767944) to 5.3 (client).
+[NotebookApp | INFO] Starting buffering for 192e8430-a9e4-4506-9591-0b1b5c767944:7d2a79fbe5f74f588b246afabf027561
+[NotebookApp | INFO] Starting buffering for edb437c2-6c95-4bc3-8983-eac0459a7c7d:498183b2861840748b51fc9a64330675

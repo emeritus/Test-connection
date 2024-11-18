@@ -1,0 +1,122 @@
+### This used GitHub secrets that need configured
+# - AWS_KEY_ID
+# - AWS_SECRET_ACCESS_KEY
+# - AWS_REGION
+# - AWS_BUCKET
+
+name: AWS Upload for Canvas
+
+# Run on any push to main.
+on:
+  push:
+    branches:
+      -  main
+      -  master
+    paths-ignore:
+      - '.github/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout/get access to repo
+
+      - uses: actions/checkout@v2
+
+      # The code for recursive-zip-* is the same
+      # The only difference is which directory name we are finding for mapfile
+      
+      # Simplify the report file logic by splitting between two steps
+      - name: Delete Existing Report File
+        run: |
+          REPORT_FILE=.github/aws-upload-report.md
+          if [ -f "$REPORT_FILE" ]; then
+            rm -f ./$REPORT_FILE 2> /dev/null
+            git add ./$REPORT_FILE
+            git config --local user.name "aws-upload"
+            git commit -m "Remove existing aws-upload-report"
+          fi
+
+      - name: Create Report File
+        run: |
+          printf "%s\n\n" "# AWS Upload Report" > ./.github/aws-upload-report.md
+
+      - name: recursive-zip-starter
+        run: |
+          REPO_NAME=`echo $GITHUB_REPOSITORY | cut -f2 -d '/'`
+          mkdir -p ./upload/$REPO_NAME && \
+          mapfile -t FOLDERS < <(find . -type d -name 'starter') && \
+          WORKING_DIR=`pwd` && \
+          for FOLDER_NAME in "${FOLDERS[@]}"
+          do
+              cd $FOLDER_NAME
+              ARR=(${FOLDER_NAME//\// })
+              PARENT_FOLDER_INDEX=$(expr "${#ARR[@]}" - 2 )
+              FOLDER_TYPE_INDEX=$(expr "${#ARR[@]}" - 1 )
+              ZIP_FOLDER_NAME="${ARR[$PARENT_FOLDER_INDEX]}_${ARR[$FOLDER_TYPE_INDEX]}.zip"
+              WEEK_FOLDER=${ARR[1]}
+              echo $WEEK_FOLDER/$ZIP_FOLDER_NAME 
+              mkdir -p $WORKING_DIR/upload/$REPO_NAME/$WEEK_FOLDER
+              zip -r $WORKING_DIR/upload/$REPO_NAME/$WEEK_FOLDER/$ZIP_FOLDER_NAME ./*
+              printf "%s\n" "- <https://${{ secrets.AWS_BUCKET }}.s3.${{ secrets.AWS_REGION }}.amazonaws.com/$REPO_NAME/$WEEK_FOLDER/$ZIP_FOLDER_NAME>" >> $WORKING_DIR/.github/aws-upload-report.md
+              cd $WORKING_DIR
+          done
+
+      - name: recursive-zip-solution
+        run: |
+          REPO_NAME=`echo $GITHUB_REPOSITORY | cut -f2 -d '/'`
+          mkdir -p ./upload/$REPO_NAME && \
+          mapfile -t FOLDERS < <(find . -type d -name 'solution') && \
+          WORKING_DIR=`pwd` && \
+          for FOLDER_NAME in "${FOLDERS[@]}"
+          do
+              cd $FOLDER_NAME
+              ARR=(${FOLDER_NAME//\// })
+              PARENT_FOLDER_INDEX=$(expr "${#ARR[@]}" - 2 )
+              FOLDER_TYPE_INDEX=$(expr "${#ARR[@]}" - 1 )
+              ZIP_FOLDER_NAME="${ARR[$PARENT_FOLDER_INDEX]}_${ARR[$FOLDER_TYPE_INDEX]}.zip"
+              WEEK_FOLDER=${ARR[1]}
+              echo $WEEK_FOLDER/$ZIP_FOLDER_NAME 
+              mkdir -p $WORKING_DIR/upload/$REPO_NAME/$WEEK_FOLDER
+              zip -r $WORKING_DIR/upload/$REPO_NAME/$WEEK_FOLDER/$ZIP_FOLDER_NAME ./*
+              printf "%s\n" "- <https://${{ secrets.AWS_BUCKET }}.s3.${{ secrets.AWS_REGION }}.amazonaws.com/$REPO_NAME/$WEEK_FOLDER/$ZIP_FOLDER_NAME>" >> $WORKING_DIR/.github/aws-upload-report.md
+              cd $WORKING_DIR
+          done
+
+      # List what we are uploading for debugging purposes
+
+      - name: List files in upload
+        run: |
+          REPO_NAME=`echo $GITHUB_REPOSITORY | cut -f2 -d '/'`
+          ls -R ./upload/$REPO_NAME
+
+      # Commit report to repo
+      - name: Commit Report
+        run: |
+          REPORT_FILE=.github/aws-upload-report.md
+          git add ./$REPORT_FILE
+          git config --local user.name "aws-upload"
+          git commit -m "Commit aws-upload-report"
+
+      # Push report to repo
+      # Requires
+      # Settings > Actions > Workflow permissions === Read and write permissions
+
+      - name: Push Report
+        uses: ad-m/github-push-action@master
+        with:
+          branch: ${{ 'main' }}
+
+      # Auth to AWS
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      # Sync to AWS
+
+      - name: Sync to S3
+        run: aws s3 sync ./upload/ s3://${{ secrets.AWS_BUCKET }}
